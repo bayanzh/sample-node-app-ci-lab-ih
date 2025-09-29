@@ -59,4 +59,4 @@ jobs:
           containerAppName: frontendapp
 
           # Image tag = commit SHA for traceability
-          imageToBuild: ${{ secrets.DOCKERHUB_USERNAME }_
+          imageToBuild: ${{ secrets.DOCKERHUB_USERNAME }}/frontendapp-node:${{ github.sha }}
